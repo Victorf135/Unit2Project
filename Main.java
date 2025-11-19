@@ -3,7 +3,7 @@
 public class Main {
     public static void main(String[] args) {
 
-      String a = Slots.slots(0,0,0);
+      String a = SlotsAndTrivia.slots(0,0,0);
 
         System.out.println(a);
 
@@ -23,6 +23,9 @@ public class Main {
         }
         if(slot1 ==slot2 &&slot1 ==slot3){
         System.out.println("Jackpot! You get $" + 100);
+        }
+        if (slot1 != slot2 && slot1 != slot3 && slot2 != slot3){
+          System.out.println("Aww! Better luck next time!");
         }
 
     }
