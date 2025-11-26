@@ -25,56 +25,59 @@ public class SlotsAndTrivia {
     }
 
     public static String Trivia(String Q1, String Q2, String Q3, String Q4, String Q5, String Q6, String Q7, String Q8, String Q9, String Q10, String Q11, String Q12){
-        Q1 = "Who is the main side character in the movie Shrek?";
-        Q2 = "Who is the main character in the movie Shrek?";
-        Q3 = "Who is the female lead in the movie Shrek?";
-        Q4 = "Who is the starting opposite hitter on Japan's Volleyball team?";
-        Q5 = "What does NBA stand for?";
-        Q6 = "What does VNL stand for?";
-        Q7 = "Who is the tallest player in the NBA currently?";
-        Q8 = "Who has the most Olympic Gold medals of all time?";
-        Q9 = "What is the most popular video game that starts with an F?";
-        Q10 = "Who made the song Beanie?";
-        Q11 = "Who made the song Thriller?";
-        Q12 = "Who made the song Grenade?";
+        Q1 = "Who is the main side character in the movie Shrek?,Donkey";
+        Q2 = "Who is the main character in the movie Shrek?,Shrek";
+        Q3 = "Who is the female lead in the movie Shrek?,Fiona";
+        Q4 = "Who is the starting opposite hitter on Japan's Volleyball team?,Nishida";
+        Q5 = "What does NBA stand for?,National Basketball Association";
+        Q6 = "What does VNL stand for?,Volleyball National League";
+        Q7 = "Who is the tallest player in the NBA currently?,Victor Wembenyama";
+        Q8 = "Who has the most Olympic Gold medals of all time?,Michael Phelps";
+        Q9 = "What is the most popular video game that starts with an F?,Fortnite";
+        Q10 = "Who made the song Beanie?,Chezile";
+        Q11 = "Who made the song Thriller?,Michael Jackson";
+        Q12 = "Who made the song Grenade?,Bruno Mars";
         int v = ((int) (Math.random() * 14) + 1);
+
         String condition = "";
 
         if (v == 1) {
-            condition = Q1;
+            return Q1;
         }
         if (v == 2) {
-            condition = Q2;
+            condition = Q2 + "," + v;
         }
         if (v == 3) {
-            condition = Q3;
+            condition = Q3 + "," + v;
         }
         if (v == 4) {
-            condition = Q4;
+            condition = Q4 + "," + v;
         }
         if (v == 5) {
-            condition = Q5;
+            condition = Q5 + "," + v;
         }
         if (v == 6) {
-            condition = Q6;
+            condition = Q6 + "," + v;
         }
         if (v == 7) {
-            condition = Q7;
+            condition = Q7 + "," + v;
         }
         if (v == 8) {
-            condition = Q8;
+            condition = Q8 + "," + v;
         }
         if (v == 9) {
-            condition = Q9;
+            condition = Q9 + "," + v;
         }
         if (v == 10) {
-            condition = Q10;
+            condition = Q10 + "," + v;
         }
         if (v == 11) {
-            condition = Q11;
+            condition = Q11 + "," + v;
         }
         if (v == 12) {
-            condition = Q12;
+            condition = Q12 + "," + v;
+
+
         }
 
         return condition;
